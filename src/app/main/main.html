@@ -1,7 +1,7 @@
 <div class="container">
 
   <div>
-    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+    <acme-navbar creation-date="main.creationDate" active-menu="0"></acme-navbar>
   </div>
 
   <div class="jumbotron text-center">
@@ -14,10 +14,15 @@
       <button type="button" class="btn btn-lg btn-success" ng-click="main.showToastr()">Splendid Toastr</button>
     </p>
     <p>
-      With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
     </p>
   </div>
 
+  <div class="row text-center">
+      <p class="lead">
+      <h1>主要使用的一些技术</h1>
+      <br >
+      </p>
+  </div>
   <div class="row">
     <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
       <div class="thumbnail">

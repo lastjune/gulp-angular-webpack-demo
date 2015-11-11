@@ -6,6 +6,11 @@ export function routerConfig ($routeProvider) {
       controller: 'MainController',
       controllerAs: 'main'
     })
+    .when('/about', {
+      templateUrl: 'app/about/about.html',
+      controller: 'AboutController',
+      controllerAs: 'about'
+    })
     .otherwise({
       redirectTo: '/'
     });
